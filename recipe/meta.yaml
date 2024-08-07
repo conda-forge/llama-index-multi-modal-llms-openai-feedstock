@@ -1,5 +1,5 @@
 {% set name = "llama-index-multi-modal-llms-openai" %}
-{% set version = "0.1.8" %}
+{% set version = "0.1.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/llama_index_multi_modal_llms_openai-{{ version }}.tar.gz
-    sha256: 5e2c94a6415a2509cad035ccea34461959ae327a5900d3e820417e9ebb9a13ec
+    sha256: dbacf44d5c2cca07ca424eacd1337583002d70387a3c1868cf8ae743b1dbec4a
   # https://github.com/run-llama/llama_index/issues/10806
   - url: https://raw.githubusercontent.com/run-llama/llama_index/main/LICENSE
     sha256: 24f40b5190fdacabc24ddbb5f76364d15e4f030925220ea300d8a2dd4993c8cb
