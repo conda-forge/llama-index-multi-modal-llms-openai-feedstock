@@ -1,13 +1,13 @@
 {% set name = "llama-index-multi-modal-llms-openai" %}
-{% set version = "0.2.3" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  - url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/llama_index_multi_modal_llms_openai-{{ version }}.tar.gz
-    sha256: 8eb9b7f1ff3956ef0979e21bc83e6a885e40987b7199f195e46525d06e3ae402
+  - url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/llama_index_multi_modal_llms_openai-{{ version }}.tar.gz
+    sha256: 71e983c7771c39088e4058cd78029219315a0fb631b9e12b903e53243b9a3fd6
   # https://github.com/run-llama/llama_index/issues/10806
   - url: https://raw.githubusercontent.com/run-llama/llama_index/main/LICENSE
     sha256: 24f40b5190fdacabc24ddbb5f76364d15e4f030925220ea300d8a2dd4993c8cb
@@ -24,8 +24,8 @@ requirements:
     - pip
   run:
     - python >=3.8.1,<4.0
-    - llama-index-core >=0.11.0,<0.12.0
-    - llama-index-llms-openai >=0.2.11,<0.3.0
+    - llama-index-core >=0.12.0,<0.13.0
+    - llama-index-llms-openai >=0.3.0,<0.4.0
 
 test:
   imports:
